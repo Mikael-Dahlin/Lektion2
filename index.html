@@ -8,10 +8,37 @@
   <body>
     <h1>First JS code</h1>
     <script>
-      function sayHello(name) {
-        console.log("Hello " + name);
+      // Övning
+      /*
+      - skapa en funktion som tar 2 argument - heltal
+      - returnera summan av talen
+      - spara retursvaret i en variabel
+      - skapa en funktion som tar 2 argument:
+          * retursvaret
+          * en sträng "Summan blir: "
+      - funktionen ska logga i console retursvaret och strängen
+      */
+
+      function summeraTal(tal1, tal2) {
+        return tal1 + tal2;
       }
-      sayHello("Mikael");
+      let summeratTal = summeraTal(15, 47);
+      let logText = "Summan blir: ";
+
+      function print(talet, texten) {
+        console.log(texten + talet);
+      }
+      print(summeratTal, logText);
+
+      // Slut övning
+
+      function sayHello(title, name, surname) {
+        console.log("Hello " + title + " " + name + " " + surname);
+        let fullName = title + " " + name + " " + surname;
+        return fullName;
+      }
+      let answer = sayHello("Mr", "Mikael", "Dahlin");
+      console.log(answer);
     </script>
   </body>
 </html>
