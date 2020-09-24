@@ -8,6 +8,30 @@
   <body>
     <h1>First JS code</h1>
     <script>
+      let cat = {
+        name: "James",
+        paralyzed: false,
+        age: 2,
+        eyeColor: "Yellow",
+        climb(where) {
+          console.log("the cat is climbing the " + where);
+        },
+        meow() {
+          alert("Meooowwwwww");
+        },
+        owner: {
+          name: "Mikael",
+          age: 32,
+          adress: {
+            street: "Regementsgatan",
+            zipcode: 21753,
+            city: "Malmö",
+          },
+        },
+      };
+
+      console.log("cat: ", cat);
+
       // Övning
       /*
       - skapa en funktion som tar 2 argument - heltal
